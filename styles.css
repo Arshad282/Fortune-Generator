@@ -1,0 +1,161 @@
+/* ============================
+   BASIC PAGE SETUP
+   ============================ */
+/* Make the page take up full height and remove default margins */
+body {
+    margin: 0;
+    min-height: 100vh;
+    
+    /* Center everything on the page */
+    display: flex;
+    flex-direction: column;
+    
+    /* Use a simple font that's easy to read */
+    font-family: Arial, sans-serif;
+    
+    /* Light blue background color */
+    background-color: #e6f3ff;
+}
+
+/* ============================
+   MAIN CONTENT AREA
+   ============================ */
+/* Area that holds the fortune box */
+.content {
+    /* Take up all available space */
+    flex: 1;
+    
+    /* Center the fortune box above footer */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+    /* Add some space around content */
+    padding: 20px;
+}
+
+/* ============================
+   FORTUNE BOX CONTAINER
+   ============================ */
+/* Container that holds fortune box and buttons */
+.fortune-container {
+    /* Center everything inside */
+    text-align: center;
+    
+    /* Add space at bottom for footer */
+    margin-bottom: 80px;
+    
+    /* Add space inside container */
+    padding: 20px;
+    
+    /* White background with rounded corners */
+    background-color: white;
+    border-radius: 10px;
+    
+    /* Add a subtle shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================
+   FORTUNE BOX
+   ============================ */
+/* Box where fortune message appears */
+#fortune-box {
+    /* Add space inside and around box */
+    padding: 30px;
+    margin: 20px;
+    
+    /* Add a border and round the corners */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    
+    /* White background */
+    background-color: white;
+    
+    /* Make sure box is wide enough */
+    min-width: 300px;
+    
+    /* Make text bold and a good size to read */
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+    
+    /* Add text shadow for better visibility */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    
+    /* Smooth transition for color changes */
+    transition: all 0.3s ease;
+}
+
+/* ============================
+   BUTTON GROUP
+   ============================ */
+/* Container for all buttons */
+.button-group {
+    /* Put buttons in a row */
+    display: flex;
+    
+    /* Add space between buttons */
+    gap: 10px;
+    
+    /* Center the buttons */
+    justify-content: center;
+    
+    /* Wrap buttons on small screens */
+    flex-wrap: wrap;
+}
+
+/* ============================
+   BUTTONS
+   ============================ */
+/* Style for all buttons */
+.color-btn {
+    /* Add space inside buttons */
+    padding: 12px 20px;
+    
+    /* Remove default border */
+    border: none;
+    
+    /* Round the corners */
+    border-radius: 5px;
+    
+    /* Light gray background */
+    background-color: #f0f0f0;
+    
+    /* Make text bold */
+    font-weight: bold;
+    
+    /* Show pointer cursor on hover */
+    cursor: pointer;
+    
+    /* Smooth transition for hover effect */
+    transition: all 0.2s ease;
+}
+
+/* When mouse hovers over button */
+.color-btn:hover {
+    /* Darken the button */
+    background-color: #e0e0e0;
+    
+    /* Add a subtle lift effect */
+    transform: translateY(-1px);
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+/* Footer at bottom of page */
+footer {
+    /* Dark background with white text */
+    background-color: #333;
+    color: white;
+    
+    /* Center the text */
+    text-align: center;
+    
+    /* Add space inside footer */
+    padding: 20px;
+    
+    /* Make text bold */
+    font-weight: bold;
+}

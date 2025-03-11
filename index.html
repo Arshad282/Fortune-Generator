@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortune Generator</title>
+    
+    <!-- Link to our CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Main content area -->
+    <div class="content">
+        <!-- Container for fortune box and buttons -->
+        <div class="fortune-container">
+            <!-- Box where fortune will appear (click to change background!) -->
+            <div id="fortune-box" title="Click me to change background color!">
+                Click me for your fortune...
+            </div>
+            
+            <!-- Buttons to change fortune appearance -->
+            <div class="button-group">
+                <!-- Each button calls changeStyle with different option -->
+                <button onclick="changeStyle('font')" class="color-btn">
+                    Change Text Color
+                </button>
+                <button onclick="changeStyle('background')" class="color-btn">
+                    Change Box Color
+                </button>
+                <button onclick="changeStyle('border')" class="color-btn">
+                    Change Border
+                </button>
+                <button onclick="changeStyle('text')" class="color-btn">
+                    Change Font Style
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer at bottom of page -->
+    <footer>
+        <p>✨ Fortune Generator ✨</p>
+    </footer>
+    
+    <!-- Link to our JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
